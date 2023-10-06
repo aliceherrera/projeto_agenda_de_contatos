@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Contatos</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> 
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Novo Contato</h1>
+        </header>
+        <div class="novo-contato">
+            <form id="add-new">
+                <input id="name" type="text" required placeholder="Nome">
+                <input id="number" type="number" required placeholder="Telefone">
+                <input id="mail" type="email" required placeholder="e-mail">
+                <button id="botao-add" type="submit">add_circle</button>
+                <button id="botao-limpa" type="reset">backspace</button>
+            </form>
+        </div>
+        <div class="contatos">
+            <table cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Telefone</th>
+                        <th>E-mail</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
